@@ -1,0 +1,34 @@
+.header {
+	padding-top: 16px;
+	padding-bottom: 32px;
+
+	&__inner {
+		// display: grid;
+		// grid-template-columns: repeat(2, 1fr);
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		&-left {
+
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			// justify-content: space-around;
+			gap: 16px;
+		}
+	}
+}
+
+.phone-number svg {
+	fill: var(---color-secondary);
+}
+
+.material-symbols-rounded {
+	font-size: 40px;
+}

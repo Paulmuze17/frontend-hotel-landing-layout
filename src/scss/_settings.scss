@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  background-color: var(---color-grey-light);
 }
+
 
 * {
 	margin: 0;
@@ -13,6 +17,18 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+button {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
 }
 
 img {
