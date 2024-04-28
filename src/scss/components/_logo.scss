@@ -1,3 +1,56 @@
 .logo {
-	background-color: #F0BF5F;
+	// display: grid;
+	// grid-template-columns: 2fr auto;
+	display: flex;
+	// flex: 0 0 auto;
+	justify-content: flex-end;
+	// align-items: center;
+	background-color: var(--color-primary);
+	border-radius: 10px;
+	padding: 5px 7px 10px 8px;
+	max-width: 125px;
+
+	// margin-right: 1rem;
+
+	&__image {
+
+
+		&-container {
+			min-width: 28px;
+			min-height: 24px;
+			transform: translateY(3px);
+			margin: auto 0;
+		}
+	}
+
+	&__text {
+		// height: fit-content;
+		display: inline-block;
+		// text-align: end;
+		font-size: 16px;
+		font-weight: 600;
+		color: var(--color-light);
+		line-height: 120%;
+
+		&-container {
+			position: relative;
+
+			padding-right: 8px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			// justify-content: center;
+			gap: 6px;
+			line-height: 120%;
+		}
+	}
+	&__sub-text {
+		position: absolute;
+		bottom: -3px;
+		font-size: 10px;
+		transform: translateX(-2px);
+		color: var(--color-light);
+		line-height: 120%;
+		font-weight: normal;
+	}
 }

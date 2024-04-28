@@ -1,0 +1,36 @@
+.section-tour {
+	padding: 40px 48px;
+	background-color: var(--color-grey-medium);
+	border-radius: var(--border-radius);
+}
+
+.tour__container {
+	padding: 32px 40px;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.tour__label,
+.tour__input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.tour__label {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 14px;
+}
+.tour__input {
+	// padding: 5px 8px 0;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 14px;
+}
+
+// .tour__label:not(:last-child) {
+// 	border-bottom: 1px solid red;
+// }

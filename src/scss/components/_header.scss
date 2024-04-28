@@ -8,27 +8,52 @@
 	}
 
 	&__top {
+		margin-bottom: 16px;
+		// margin-bottom: 1rem;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 
 		&-left {
-
+			padding-right: 1rem;
 		}
 
 		&-right {
 			display: flex;
-			align-items: center;
+			// align-items: center;
 			justify-content: flex-end;
 			// justify-content: space-around;
-			gap: 16px;
+			gap: 8px;
 		}
+
+		&-btns-container {
+			display: flex;
+			gap: 8px;
+		}
+	}
+
+	&__bottom {
+		padding: 10px 8px;
+		border-radius: 15px;
+		background-color: var(--color-light);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-height: 63px;
+		gap: 8px;
 	}
 }
 
 .phone-number svg {
-	fill: var(---color-secondary);
+	fill: var(--color-secondary);
 }
 
-.material-symbols-rounded {
-	font-size: 40px;
+.phone-number__box {
+	// width: 40px;
+	// height: 40px;
+	// margin: auto;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
 }
+
+

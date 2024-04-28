@@ -1,0 +1,29 @@
+.benefits__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+}
+
+.benefits__item {
+	padding: 16px;
+	min-height: 120px;
+	display: grid;
+	grid-template-columns: minmax(32px, auto) 1fr;
+	// align-items: center;
+	// margin: auto 0;
+
+	gap: 16px;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius);
+}
+
+.benefits__item-text {
+	line-height: 160%;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.benefits__item-top {
+	// margin: 0 auto;
+	align-self: center;
+}

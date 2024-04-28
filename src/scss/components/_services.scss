@@ -1,0 +1,36 @@
+.services__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+}
+
+.service-card {
+	background-color: var(--color-light);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+
+}
+
+.service-card__bottom {
+	padding: 24px 16px;
+}
+
+.service-card__heading {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 120%;
+	color: inherit;
+}
+
+.service-card__link {
+	color: var(--color-secondary);
+	fill: var(--color-secondary);
+	margin-bottom: 10px;
+}
+
+.service-card__text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--color-dark);
+}
