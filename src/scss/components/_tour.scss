@@ -9,14 +9,20 @@
 	background-color: var(--color-light);
 	border-radius: var(--border-radius);
 	display: flex;
-	flex-direction: column;
-	gap: 24px;
+	gap: 56px;
 }
 
-.tour__label,
-.tour__input-container {
+.tour__label {
 	display: flex;
 	flex-direction: column;
+	gap: 8px;
+}
+.tour__input-container {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
 	gap: 8px;
 }
 .tour__label {

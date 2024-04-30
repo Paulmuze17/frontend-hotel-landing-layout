@@ -12,7 +12,7 @@
 				<section class="section">
 					<h2>Спецпредложения</h2>
 					<div class="special-offers">
-						<div class="special-offers__main-container ">
+						<div class="special-offers__main-container">
 							<div class="special-offers__main special-offer-card">
 								<!-- <div class="special-offer-card__inner"></div> -->
 								<div class="special-offer-card__info-container">
@@ -302,7 +302,7 @@
 					<ul class="placing__container">
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-1.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-1.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -344,7 +344,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-3.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-3.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -386,7 +386,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-4.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-4.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -428,7 +428,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-2.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-2.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -470,7 +470,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-5.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-5.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -512,7 +512,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-6.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-6.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -554,7 +554,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-7.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-7.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -596,7 +596,7 @@
 						</li>
 						<li class="placing__card">
 							<div class="placing__card-top">
-								<img src="/assets/images/hotels/hotel-8.jpg" alt="">
+								<img class="placing__card-top-image" src="/assets/images/hotels/hotel-8.jpg" alt="">
 							</div>
 							<div class="placing__card-bottom">
 								<div class="placing__card-info-top">
@@ -638,7 +638,8 @@
 						</li>
 						<li class="placing__card-more">
 							<img class="placing__card-more-image" src="/assets/images/hotels/hotel-more.jpg" alt="More Options">
-							<a class="placing__card-more-link link-arrow" href="#">Посмотреть все варианты<svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<a class="placing__card-more-link link-arrow" href="#">Посмотреть все варианты
+								<svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M6.9 8.49997L0 1.59997L1.58062 0.0193481L10.0613 8.49997L1.58062 16.9806L0 15.4L6.9 8.49997Z"/>
 								</svg></a>
 						</li>
@@ -694,37 +695,42 @@
 						<div class="contacts__top-container contacts__image-container">
 							<img src="/assets/images/contacts/reseption-photo-4.jpg" alt="Milivia reseption">
 						</div>
-						<ul class="contacts__bottom-container">
-							<li class="contacts__info-item">
-								<div class="contacts__info-heading">Адрес</div>
-								<div class="contacts__info-text">Lorem 56, dolor sit amet 56/5, consectetur 55</div>
-							</li>
-							<li class="contacts__info-item">
-								<div class="contacts__info-heading">Телефоны</div>
-								<div class="contacts__info-container">
-									<a class="link" href="tel:+79990000000">+7 999 000 00-00</a>
-									<a class="link" href="tel:+79990000000">+7 999 000 00-00</a>
-								</div>
-							</li>
-							<li class="contacts__info-item">
-								<div class="contacts__info-heading">Почта</div>
-								<div class="contacts__info-container">
-									<div>
-										<a class="link" href="mailto:hotel@email.com">hotel@email.com</a>
-										<div class="contacts__info-text-grey">по вопросам бронирования</div>
+						<div class="contacts__bottom-container">
+
+							<ul class="contacts__bottom-info-container">
+								<li class="contacts__info-item">
+									<div class="contacts__info-heading">Адрес</div>
+									<div class="contacts__info-text">Lorem 56, dolor sit amet 56/5, consectetur 55</div>
+								</li>
+								<li class="contacts__info-item">
+									<div class="contacts__info-heading">Телефоны</div>
+									<div class="contacts__info-container">
+										<a class="link" href="tel:+79990000000">+7 999 000 00-00</a>
+										<a class="link" href="tel:+79990000000">+7 999 000 00-00</a>
 									</div>
-									<div>
-										<a class="link" href="mailto:hotel2@email.com">hotel2@email.com</a>
-										<div class="contacts__info-text-grey">по вопросам сотрудничества</div>
+								</li>
+								<li class="contacts__info-item">
+									<div class="contacts__info-heading">Почта</div>
+									<div class="contacts__info-container">
+										<div>
+											<a class="link" href="mailto:hotel@email.com">hotel@email.com</a>
+											<div class="contacts__info-text-grey">по вопросам бронирования</div>
+										</div>
+										<div>
+											<a class="link" href="mailto:hotel2@email.com">hotel2@email.com</a>
+											<div class="contacts__info-text-grey">по вопросам сотрудничества</div>
+										</div>
 									</div>
-								</div>
-							</li>
-							<li class="contacts__info-item">
-								<div class="contacts__info-heading">График</div>
-								<div class="contacts__info-text">С понедельника по пятницу с 9:00 до 21:00</div>
-							</li>
-						</ul>
-						<a class="contacts__btn btn btn-fc" href="#">Построить маршрут</a>
+								</li>
+								<li class="contacts__info-item">
+									<div class="contacts__info-heading">График</div>
+									<div class="contacts__info-text">С понедельника по пятницу с 9:00 до 21:00</div>
+								</li>
+
+							</ul>
+							<a class="contacts__btn btn btn-fc" href="#">Построить маршрут</a>
+
+						</div>
 					</div>
 
 				</section>

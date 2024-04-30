@@ -24,18 +24,71 @@
 		font-size: 14px;
 	}
 	.logo {
+		padding: 5px 7px 10px 8px;
+
 		min-height: 40px;
+		max-width: 125px;
 
 		&__image-container {
 			max-width: 25px;
 			max-height: 20px;
 		}
-	}
 
+		&__text {
+			font-size: 16px;
+
+			&-container {
+				padding-right: 8px;
+			}
+		}
+
+		&__sub-text {
+			bottom: -3px;
+			font-size: 10px;
+			transform: translateX(-2px);
+		}
+	}
+	.logo__image-container {
+		transform: translateY(3px);
+
+	}
+	.header-left {
+			padding-right: 1rem;
+
+	}
+	.menu__container {
+		display: none;
+	}
+	.header {
+		padding-top: 16px;
+		padding-bottom: 32px;
+	}
+	.header__top {
+		margin-bottom: 16px;
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	.header__top-btns-container {
+		gap: 8px;
+	}
+	.header__bottom {
+		padding: 10px 8px;
+		max-height: 63px;
+		gap: 8px;
+	}
+	.header__bottom-btns {
+		gap: 8px;
+	}
 	.services__container {
 		grid-template-columns: 1fr;
 	}
-
+	.phone-number {
+		display: none;
+	}
+	.phone-number-icon,
+	.burger-menu-btn {
+		display: block;
+	}
 	.service-card__top {
 		max-height: 164px;
 		overflow: hidden;
@@ -51,9 +104,6 @@
 		gap: 8px;
 	}
 
-	.placing__card-top {
-		max-height: 132px;
-	}
 
 	.placing__card-bottom {
 		padding: 16px 24px;
@@ -89,16 +139,21 @@
 
 	.tour__container {
 		padding: 24px;
+		gap: 24px;
 	}
+
 	.contacts__container {
 		padding: 24px;
-	}
-	.contacts__container {
 		grid-template-columns: 1fr;
 		gap: 24px;
 	}
 	.contacts__bottom-container {
-		gap: 8px;
+		gap: 24px;
+		order: 0;
+
+	}
+	.contacts__bottom-info-container {
+		gap: 16px;
 	}
 	.contacts__info-item {
 		padding-bottom: 16px;
@@ -161,5 +216,84 @@
 	}
 	.main {
 		margin-bottom: 32px;
+	}
+
+	.special-offers {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+	.special-offers__additional-container {
+		order: 0;
+	}
+	.special-offer-card {
+		min-height: 150px;
+		padding: 24px 32px;
+
+	}
+	.special-offer-card__heading {
+		margin-bottom: 8px;
+		font-size: 18px;
+		max-width: 162px;
+	}
+	.special-offer-card__price {
+		font-size: 14px;
+	}
+	.special-offer-card__link {
+		font-size: 14px;
+	}
+	.special-offers__main-price {
+		font-size: 16px;
+	}
+	.special-offers__main-heading {
+		font-size: 24px;
+		max-width: 162px;
+	}
+	.special-offers__main {
+		padding: 60px 32px 24px;
+	}
+	.section:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	h2 {
+		font-size: 18px;
+		margin-bottom: 8px;
+	}
+	.about-us__text {
+		font-size: 14px;
+	}
+	.service-card__text {
+		font-size: 14px;
+	}
+	.service-card__bottom {
+		padding: 24px 16px;
+	}
+	.services__container {
+		gap: 8px;
+	}
+	.benefits__container {
+		gap: 8px;
+	}
+	.benefits__item {
+		padding: 16px;
+		min-height: 120px;
+		grid-template-columns: minmax(32px, auto) 1fr;
+		gap: 16px;
+	}
+	.benefits__item-top svg {
+		height: 32px;
+		width: 32px;
+	}
+	.placing__card-top-image {
+		height: 132px;
+	}
+	.tour__container {
+		flex-direction: column;
+	}
+
+	.tour__input-container {
+		flex-direction: column;
+	}
+	.contacts__btn {
+		max-width: 100%;
 	}
 }
