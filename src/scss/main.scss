@@ -23,11 +23,6 @@
 		--container-offset: 16px;
 	}
 
-	html {
-		// font-size: 14px;
-		// background-color: red;
-	}
-
 	.btn {
 		font-size: 14px;
 	}
@@ -94,7 +89,8 @@
 	}
 
 	.header__bottom-btns {
-		gap: 8px;
+		// gap: 8px;
+		justify-content: space-between;
 	}
 
 	.services__container {
@@ -171,7 +167,11 @@
 	.contacts__container {
 		padding: 24px;
 		grid-template-columns: 1fr;
-		gap: 24px;
+		gap: calc(24px + 8px);
+	}
+
+	.contacts__top-container {
+		height: calc(100% + 8px);
 	}
 
 	.contacts__bottom-container {
@@ -190,12 +190,17 @@
 
 	.contacts__info-heading {
 		font-size: 16px;
-		line-height: 14px;
+		line-height: 100%;
+
+	}
+	.contacts__info-text-grey {
+		line-height: 100%;
+
 	}
 
 	.contacts__info-text {
 		font-size: 14px;
-		line-height: 140%;
+		line-height: 120%;
 	}
 
 	.contacts__info-item {
@@ -204,8 +209,8 @@
 	}
 
 	.contacts__info-text-grey {
-		line-height: 120%;
-		max-width: 136px;
+		// line-height: 120%;
+		// max-width: 136px;
 	}
 
 	.contacts__info-container {
@@ -271,6 +276,10 @@
 
 	.special-offers__additional-container {
 		order: 0;
+	}
+
+	.special-offers__additional-container .special-offer-card:not(:last-child) {
+		margin-bottom: 6px;
 	}
 
 	.special-offer-card {
@@ -342,9 +351,18 @@
 		gap: 16px;
 	}
 
-	.benefits__item-top svg {
+	.benefits__item-top {
 		height: 32px;
 		width: 32px;
+	}
+	.benefits__item-top svg {
+		height: 100%;
+		width: 100%;
+		// width: 32px;
+	}
+
+	.tour__btn {
+		width: 100%;
 	}
 
 	.placing__card-top-image {
@@ -361,18 +379,25 @@
 
 	.contacts__btn {
 		max-width: 100%;
+		font-size: 16px;
+		padding: 27px 41px;
 	}
 
 	.footer__info-box {
 		flex-direction: column;
 		gap: 8px;
 	}
+
+	.footer__rules-link {
+		font-size: 14px;
+	}
 }
 
 // 768px-992px
 @media (min-width: 527px) and (max-width: 992px) {
 	:root {
-		--container-offset: 44px;
+		--container-offset: 32px;
+		// --content-width: 640px;
 	}
 
 	.burger-menu-btn {
