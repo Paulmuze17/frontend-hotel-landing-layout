@@ -1,56 +1,44 @@
 .logo {
-	// display: grid;
-	// grid-template-columns: 2fr auto;
 	display: flex;
-	// flex: 0 0 auto;
 	justify-content: flex-end;
-	// align-items: center;
 	background-color: var(--color-primary);
-	border-radius: 10px;
-	// max-width: 270px;
-	// height: 67px;
-	padding: 0 12px 4px 29px;
-	// margin-right: 1rem;
+	border-radius: 15px;
+	max-width: 270px;
+	padding: 4px 14px 4px 28px;
 
 	&__image {
-
-
 		&-container {
-			width: 75px;
-			height: 60px;
+			width: 73px;
+			height: 59px;
 			margin: auto 0;
 		}
 	}
 
 	&__text {
-		// height: fit-content;
 		display: inline-block;
-		// text-align: end;
 		font-size: 36px;
 		font-weight: 600;
 		color: var(--color-light);
-		line-height: 120%;
+		line-height: 100%;
 
 		&-container {
+			padding: 4px 0;
 			position: relative;
-
-			padding-right: 21px;
+			padding-right: 22px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-			// justify-content: center;
 			gap: 6px;
 			line-height: 120%;
 		}
 	}
+
 	&__sub-text {
 		position: absolute;
-		// bottom: -3px;
 		bottom: 5px;
 		font-size: 14px;
-		transform: translateX(-2px);
 		color: var(--color-light);
-		line-height: 120%;
+		line-height: 90%;
 		font-weight: normal;
 	}
 }

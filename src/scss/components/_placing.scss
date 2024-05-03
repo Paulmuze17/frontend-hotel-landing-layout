@@ -1,118 +1,124 @@
-.placing__container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 24px 16px;
-}
-.placing__card {
-	background-color: var(--color-light);
-	border-radius: var(--border-radius);
-	overflow: hidden;
-	// min-height: 330px;
-}
-.placing__card-top-image {
-	height: 220px;
-}
-.placing__card-top {
-	overflow: hidden;
-}
-.placing__card-bottom {
-	padding: 32px 40px;
-}
+.placing {
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 16px 24px;
+	}
 
-.placing__card-rating-star--filled svg{
-	fill: var(--color-primary);
+	&__card {
+		background-color: var(--color-light);
+		border-radius: var(--border-radius);
+		overflow: hidden;
 
-}
-.placing__card-rating-star svg{
-	fill: var(--color-grey);
-}
-.placing__card-rating-container{
-	display: flex;
-	gap: 5px;
-	padding: 4px 0;
-}
-.placing__card-full-price {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 120%;
-	order: -1;
-}
-.placing__card-price {
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 120%;
-}
-.placing__card-name {
-	margin-bottom: 8px;
-	font-size: 16px;
-	// font-weight: 300;
-	line-height: 14px;
-}
-.placing__card-name-additional {
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 120%;
-	color: var(--color-grey-darkest);
-}
-.placing__card-info-top {
-	margin-bottom: 16px;
-}
-.placing__card-info-bottom {
-	margin-bottom: 24px;
-}
-.placing__card-info-top {
-	display: flex;
-	gap: 8px;
-	justify-content: space-between;
-	// align-items: center;
-}
+		&-top {
+			overflow: hidden;
 
-.placing__card-more {
-	padding: 28px 8px;
-	position: relative;
-	// height: 100%;
-	min-height: 437px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	background-color: var(--color-light);
-	border-radius: var(--border-radius);
-	overflow: hidden;
-}
+			&-image {
+				height: 220px;
+			}
+		}
 
-.placing__card-more::after {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	// background-color: red;
-	background: var(--bg-gradient-2);
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
+		&-bottom {
+			padding: 32px 40px;
+		}
 
-.placing__card-more-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	// z-index: 0;
+		&-more {
+			padding: 24px 55px;
+			position: relative;
+			min-height: 437px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			background-color: var(--color-light);
+			border-radius: var(--border-radius);
+			overflow: hidden;
 
-}
-.placing__card-more-link {
-	position: relative;
-	font-size: 20px;
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: var(--bg-gradient-2);
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
 
-	// display: block;
-	font-weight: 500;
-	z-index: 1;
-	color: var(--color-light);
-	fill: var(--color-light);
+			&-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+
+			&-link {
+				position: relative;
+				height: fit-content;
+				font-size: 20px;
+				font-weight: 500;
+				z-index: 1;
+				color: var(--color-light);
+				fill: var(--color-light);
+			}
+		}
+
+		&-rating {
+			&-container{
+				display: flex;
+				gap: 5px;
+				padding: 4px 0;
+			}
+
+			&-star--filled svg{
+				fill: var(--color-primary);
+			}
+
+			&-star svg{
+				fill: var(--color-grey);
+			}
+		}
+
+		&-full-price {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 120%;
+			order: -1;
+		}
+
+		&-price {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 120%;
+		}
+
+		&-name {
+			margin-bottom: 8px;
+			font-size: 16px;
+			line-height: 14px;
+
+			&-additional {
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 120%;
+				color: var(--color-grey-darkest);
+			}
+		}
+
+		&-info-bottom {
+			margin-bottom: 32px;
+		}
+
+		&-info-top {
+			margin-bottom: 16px;
+			display: flex;
+			gap: 8px;
+			justify-content: space-between;
+		}
+	}
 }
 

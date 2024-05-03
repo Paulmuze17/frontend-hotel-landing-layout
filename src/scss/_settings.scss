@@ -2,9 +2,10 @@ html {
 //   box-sizing: border-box;
   font-size: var(--font-size);
   font-family: var(--font-family);
+  font-weight: normal;
   color: var(--color-dark);
+  line-height: 100%;
   background-color: var(--color-grey-light);
-//   letter-spacing: 0.2px;
 }
 
 
@@ -180,40 +181,41 @@ svg {
 
 .icon {
 	display: block;
-	font-size: 40px;
+	font-size: 45px;
 	color: var(--color-secondary);
 }
 
 .btn {
 	display: block;
 	// width: max-content;
-	font-size: 1rem;
+	font-size: 16px;
 	border-radius: 10px;
 	padding: 13px 20px;
 	border: 1px solid var(--color-secondary);
 	color: var(--color-secondary);
-	line-height: 120%;
-	font-weight: normal;
+	// line-height: 120%;
+	font-weight: 400;
 	text-align: center;
   	// letter-spacing: 0.2px;
 	cursor: pointer;
 	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-}
-.btn-fc {
-	display: inline-block;
-}
+	&-fc {
+		display: inline-block;
+		height: fit-content;
+	}
 
-.btn:hover,
-.btn:focus {
-	background-color: var(--color-secondary);
-	color: var(--color-light);
-}
-.btn:active {
-	background-color: var(--color-tertiary);
-	color: var(--color-light);
-}
+	&:hover,
+	&:focus {
+		background-color: var(--color-secondary);
+		color: var(--color-light);
+	}
 
+	&:active {
+		background-color: var(--color-tertiary);
+		color: var(--color-light);
+	}
+}
 
 h2 {
 	font-weight: 500;
@@ -223,40 +225,41 @@ h2 {
 	text-transform: capitalize;
 }
 
-
 .section:not(:last-child) {
 	margin-bottom: 48px;
 }
 
+.main {
+	margin-bottom: 56px;
+}
 
 .link-arrow {
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 4px;
+	gap: 11px;
 	align-items: center;
 	color: var(--color-primary);
 	font-size: 1rem;
 	line-height: 68%;
 	font-weight: normal;
-	text-transform: capitalize;
 	fill: var(--color-primary);
 	transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, gap 0.3s ease-in-out;
-}
-.link-arrow > svg {
-	fill: inherit;
-}
-.link-arrow:hover {
-	fill: var(--color-secondary);
-	color: var(--color-secondary);
-	gap: 10px;
-}
 
+	& span::first-letter {
+		text-transform: capitalize;
 
-// .link-arrow::before {
-// 	content: "";
-// 	width: 11px;
-// 	width: 11px;
-// }
+	}
+
+	& > svg {
+		fill: inherit;
+	}
+
+	&:hover {
+		fill: var(--color-secondary);
+		color: var(--color-secondary);
+		gap: 16px;
+	}
+}
 
 input {
 	padding: 5px 0;
@@ -264,6 +267,7 @@ input {
 	border: none;
 	border-bottom: 1px solid #D9D9D9;
 }
+
 select {
 	padding: 5px 8px;
 	border: none;
@@ -279,32 +283,33 @@ select {
 	line-height: 140%;
 	transition: color 0.3s ease-in-out;
 	cursor: pointer;
-}
-.link:hover,
-.link:focus {
-	color: var(--color-primary);
-}
-.link:active {
-	color: var(--color-tertiary);
+
+	&:hover,
+	&:focus {
+		color: var(--color-primary);
+	}
+
+	&:active {
+		color: var(--color-tertiary);
+	}
+
+	&-muted {
+		display: block;
+		color: var(--color-grey);
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 140%;
+		transition: color 0.3s ease-in-out;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			color: var(--color-secondary);
+		}
+
+		&:active {
+			color: var(--color-tertiary);
+		}
+	}
 }
 
-.link-muted {
-	display: block;
-	color: var(--color-grey);
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 140%;
-	transition: color 0.3s ease-in-out;
-	cursor: pointer;
-}
-.link-muted:hover,
-.link-muted:focus {
-	color: var(--color-secondary);
-}
-.link-muted:active {
-	color: var(--color-tertiary);
-}
-
-.main {
-	margin-bottom: 56px;
-}

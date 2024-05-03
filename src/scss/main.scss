@@ -15,14 +15,23 @@
 @import "./components/contacts";
 @import "./components/footer";
 
-@media screen and (max-width: 330px) {
+
+
+// @media screen and (max-width: 329.97px) {
+@media screen and (max-width: 526.97px) {
+	:root {
+		--container-offset: 16px;
+	}
+
 	html {
 		// font-size: 14px;
 		// background-color: red;
 	}
+
 	.btn {
 		font-size: 14px;
 	}
+
 	.logo {
 		padding: 5px 7px 10px 8px;
 
@@ -48,47 +57,59 @@
 			transform: translateX(-2px);
 		}
 	}
+
 	.logo__image-container {
 		transform: translateY(3px);
 
 	}
+
 	.header-left {
-			padding-right: 1rem;
+		padding-right: 1rem;
 
 	}
+
 	.menu__container {
 		display: none;
 	}
+
 	.header {
 		padding-top: 16px;
 		padding-bottom: 32px;
 	}
+
 	.header__top {
 		margin-bottom: 16px;
 		grid-template-columns: repeat(2, 1fr);
 
 	}
+
 	.header__top-btns-container {
 		gap: 8px;
 	}
+
 	.header__bottom {
 		padding: 10px 8px;
 		max-height: 63px;
 		gap: 8px;
 	}
+
 	.header__bottom-btns {
 		gap: 8px;
 	}
+
 	.services__container {
 		grid-template-columns: 1fr;
 	}
+
 	.phone-number {
 		display: none;
 	}
+
 	.phone-number-icon,
 	.burger-menu-btn {
 		display: block;
 	}
+
 	.service-card__top {
 		max-height: 164px;
 		overflow: hidden;
@@ -108,26 +129,31 @@
 	.placing__card-bottom {
 		padding: 16px 24px;
 	}
+
 	.placing__card-info-top {
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
 	}
+
 	.placing__card-full-price {
 		font-size: 16px;
 		font-weight: 300;
 		line-height: 120%;
 		order: 0;
 	}
+
 	.placing__card-info-bottom {
 		margin-bottom: 16px;
 	}
+
 	.placing__card-more {
 		padding: 8px 8px;
 		// width: 100%;
 		align-items: center;
 		min-height: 95px;
 	}
+
 	.placing__card-more-link {
 		font-size: 14px;
 		// line-height: 14px;
@@ -147,17 +173,21 @@
 		grid-template-columns: 1fr;
 		gap: 24px;
 	}
+
 	.contacts__bottom-container {
 		gap: 24px;
 		order: 0;
 
 	}
+
 	.contacts__bottom-info-container {
 		gap: 16px;
 	}
+
 	.contacts__info-item {
 		padding-bottom: 16px;
 	}
+
 	.contacts__info-heading {
 		font-size: 16px;
 		line-height: 14px;
@@ -172,15 +202,19 @@
 		grid-template-columns: 1fr;
 		gap: 8px;
 	}
+
 	.contacts__info-text-grey {
 		line-height: 120%;
 		max-width: 136px;
 	}
+
 	.contacts__info-container {
 		gap: 4px;
 	}
+
 	.footer {
 		padding: 24px;
+		gap: 16px;
 	}
 
 	.footer__rights {
@@ -191,29 +225,41 @@
 		flex-direction: column;
 		order: 0;
 	}
+
 	.footer__copyright-container {
 		order: 0;
 	}
+
 	.footer {
 		grid-template-columns: 1fr;
 	}
+
 	.footer__top {
 		flex-direction: row;
 	}
+
 	.footer__bottom {
 		gap: 16px;
 	}
+
 	.footer__info-container {
 		flex-direction: column;
-		gap: 8px;
+		gap: 16px;
 	}
+
 	.footer__rights {
 		margin-bottom: 8px;
 	}
+
 	.footer__text-desc {
 		font-size: 14px;
 		margin-bottom: 14px;
 	}
+
+	.footer__top {
+		flex-direction: row;
+	}
+
 	.main {
 		margin-bottom: 32px;
 	}
@@ -222,70 +268,89 @@
 		grid-template-columns: 1fr;
 		gap: 8px;
 	}
+
 	.special-offers__additional-container {
 		order: 0;
 	}
+
 	.special-offer-card {
 		min-height: 150px;
 		padding: 24px 32px;
 
 	}
+
 	.special-offer-card__heading {
 		margin-bottom: 8px;
 		font-size: 18px;
 		max-width: 162px;
 	}
+
 	.special-offer-card__price {
 		font-size: 14px;
 	}
+
 	.special-offer-card__link {
 		font-size: 14px;
 	}
+
 	.special-offers__main-price {
 		font-size: 16px;
 	}
+
 	.special-offers__main-heading {
 		font-size: 24px;
 		max-width: 162px;
 	}
+
 	.special-offers__main {
 		padding: 60px 32px 24px;
 	}
+
 	.section:not(:last-child) {
 		margin-bottom: 24px;
 	}
+
 	h2 {
 		font-size: 18px;
 		margin-bottom: 8px;
 	}
+
 	.about-us__text {
 		font-size: 14px;
 	}
+
 	.service-card__text {
 		font-size: 14px;
 	}
+
 	.service-card__bottom {
 		padding: 24px 16px;
 	}
+
 	.services__container {
 		gap: 8px;
 	}
+
 	.benefits__container {
 		gap: 8px;
 	}
+
 	.benefits__item {
 		padding: 16px;
 		min-height: 120px;
 		grid-template-columns: minmax(32px, auto) 1fr;
 		gap: 16px;
 	}
+
 	.benefits__item-top svg {
 		height: 32px;
 		width: 32px;
 	}
+
 	.placing__card-top-image {
 		height: 132px;
 	}
+
 	.tour__container {
 		flex-direction: column;
 	}
@@ -293,7 +358,136 @@
 	.tour__input-container {
 		flex-direction: column;
 	}
+
 	.contacts__btn {
 		max-width: 100%;
+	}
+
+	.footer__info-box {
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+// 768px-992px
+@media (min-width: 527px) and (max-width: 992px) {
+	:root {
+		--container-offset: 44px;
+	}
+
+	.burger-menu-btn {
+		display: block;
+	}
+
+	.menu__container {
+		display: none;
+	}
+
+	.header__bottom {
+		// justify-content: flex-start;
+		padding: 8px 16px;
+	}
+
+	.header {
+		padding-top: 24px;
+		padding-bottom: 48px;
+	}
+
+	h2 {
+		margin-bottom: 16px;
+	}
+
+	.special-offers {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.special-offers__additional-container {
+		order: 0;
+	}
+
+	.special-offers__additional-container .special-offer-card:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	.about-us__text {
+		max-width: 476px;
+	}
+
+	.services__container {
+		grid-template-columns: 1fr;
+
+	}
+
+	.benefits__container {
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+
+	.placing__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.placing__card-info-top {
+		flex-direction: column;
+
+	}
+
+	.placing__card-full-price {
+		order: 0;
+	}
+
+	.placing__card-more {
+		grid-column: span 2;
+		min-height: 0;
+		height: 95px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.section:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.contacts__container {
+		grid-template-columns: 1fr;
+		gap: 32px;
+		padding: 40px;
+	}
+
+	.contacts__bottom-container {
+		order: 0;
+	}
+
+	.contacts__btn {
+		place-self: center;
+	}
+
+	.main {
+		margin-bottom: 48px;
+	}
+
+	.footer {
+		// grid-template-columns: 1fr auto;
+		padding: 40px;
+		gap: 16px;
+	}
+
+	.footer__bottom {
+		flex-direction: column;
+		gap: 56px;
+	}
+
+	.footer__copyright-container {
+		order: 0;
+		max-width: 308px;
+	}
+
+	.footer__rights {
+		margin-bottom: 16px;
+	}
+
+	.contacts__image-container {
+		max-height: 513px;
 	}
 }

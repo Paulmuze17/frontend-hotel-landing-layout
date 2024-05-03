@@ -1,74 +1,70 @@
-.contacts__container {
-	padding: 48px 56px;
-	background-color: var(--color-light);
-	border-radius: var(--border-radius);
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 0 80px;
-}
+.contacts {
+	&__container {
+		padding: 48px 56px;
+		background-color: var(--color-light);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: auto 624px;
+		gap: 0 80px;
+	}
 
-.contacts__image-container {
-	background-color: var(--color-light);
-	border-radius: var(--border-radius);
-	overflow: hidden;
-	// object-fit: cover;
-}
-.contacts__top-container {
-	// margin-bottom: ;
-}
-.contacts__bottom-container {
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-	order: -1;
-}
-.contacts__bottom-info-container {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-}
-.contacts__info-item{
-	border-bottom: 1px solid #D9D9D9;
+	&__image-container {
+		background-color: var(--color-light);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+	}
 
-}
-.contacts__info-item {
-	padding-bottom: 24px;
-}
+	&__bottom-container {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		order: -1;
+		max-width: 365px;
+	}
 
-.contacts__btn {
-	padding: 24px 40px;
-	max-width: fit-content;
-}
+	&__bottom-info-container {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
 
-.contacts__info-heading {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 14px;
-}
+	&__info {
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
 
-.contacts__info-text {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 140%;
-}
+		&-heading {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 14px;
+		}
 
-.contacts__info-item {
-	display: grid;
-	// grid-template-columns: minmax(145px, 1fr) 1fr;
-	grid-template-columns: minmax(50%, 1fr) 1fr;
-	// grid-template-columns: 1fr 1fr;
-}
+		&-text {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 140%;
 
-.contacts__info-text-grey {
-	font-size: 14px;
-	line-height: 140%;
-	font-weight: normal;
-	color: var(--color-grey-dark);
-}
+			&-grey {
+				font-size: 14px;
+				line-height: 140%;
+				font-weight: normal;
+				color: var(--color-grey-dark);
+			}
+		}
 
-.contacts__info-container {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+		&-item{
+			border-bottom: 1px solid #D9D9D9;
+			display: grid;
+			grid-template-columns: auto 219px;
+			padding-bottom: 24px;
+		}
+	}
+
+	&__btn {
+		padding: 24px 40px;
+		max-width: fit-content;
+	}
 }

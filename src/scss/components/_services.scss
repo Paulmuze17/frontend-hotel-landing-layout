@@ -8,35 +8,33 @@
 	background-color: var(--color-light);
 	border-radius: var(--border-radius);
 	overflow: hidden;
-}
-.service-card__top {
-	// overflow: hidden;
-}
-.service-card__image {
-	// object-position: bottom;
-	height: 164px;
-}
 
-.service-card__bottom {
-	padding: 32px 64px 64px 28px;
-}
+	&__image {
+		max-height: 162px;
+	}
 
-.service-card__heading {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 120%;
-	color: inherit;
-}
+	&__bottom {
+		padding: 48px 30px;
+	}
 
-.service-card__link {
-	color: var(--color-secondary);
-	fill: var(--color-secondary);
-	margin-bottom: 10px;
-}
+	&__heading {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		color: inherit;
+	}
 
-.service-card__text {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 120%;
-	color: var(--color-dark);
+	&__link {
+		color: var(--color-secondary);
+		fill: var(--color-secondary);
+		margin-bottom: 8px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 120%;
+		color: var(--color-dark);
+	}
+
 }
