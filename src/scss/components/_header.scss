@@ -6,6 +6,8 @@
 		margin-bottom: 32px;
 		display: grid;
 		grid-template-columns: auto 1fr;
+		align-items: center;
+		gap: 4px;
 
 		&-right {
 			display: flex;

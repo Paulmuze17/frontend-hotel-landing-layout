@@ -22,16 +22,23 @@
 	:root {
 		--container-offset: 16px;
 	}
+	.icon {
+		font-size: 40px;
+	}
 
 	.btn {
 		font-size: 14px;
 	}
 
 	.logo {
-		padding: 5px 7px 10px 8px;
+		padding: 6px 8px 7px;
+		gap: 8px;
+		// align-items: center;
 
-		min-height: 40px;
-		max-width: 125px;
+		height: 40px;
+		width: 125px;
+
+		border-radius: 10px;
 
 		&__image-container {
 			max-width: 25px;
@@ -42,21 +49,20 @@
 			font-size: 16px;
 
 			&-container {
-				padding-right: 8px;
+				padding: 0;
+				// padding-right: 8px;
 			}
 		}
 
 		&__sub-text {
-			bottom: -3px;
+			// bottom: -3px;
 			font-size: 10px;
-			transform: translateX(-2px);
+			// transform: translateX(-2px);
+			position: relative;
+
 		}
 	}
 
-	.logo__image-container {
-		transform: translateY(3px);
-
-	}
 
 	.header-left {
 		padding-right: 1rem;
@@ -76,6 +82,9 @@
 		margin-bottom: 16px;
 		grid-template-columns: repeat(2, 1fr);
 
+	}
+	.header__top-right {
+		gap: 8px;
 	}
 
 	.header__top-btns-container {
@@ -514,5 +523,13 @@
 
 	.contacts__image-container {
 		max-height: 513px;
+	}
+}
+
+
+@media (min-width: 527px) and (max-width: 992px) {
+	:root {
+		--container-offset: 32px;
+		// --content-width: 640px;
 	}
 }
