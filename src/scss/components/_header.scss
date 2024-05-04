@@ -37,6 +37,10 @@
 			gap: 16px;
 		}
 	}
+
+	&__btn {
+		line-height: 100%;
+	}
 }
 
 .phone-number {
@@ -46,8 +50,7 @@
 	font-weight: 500;
 	color: var(--color-tertiary);
 
-	&-icon,
-	.burger-menu-btn {
+	&-icon {
 		display: none;
 	}
 
@@ -55,7 +58,9 @@
 		fill: var(--color-secondary);
 	}
 }
-
+.burger-menu-btn {
+	display: none;
+}
 .menu {
 	&__container {
 		display: flex;

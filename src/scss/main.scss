@@ -83,6 +83,11 @@
 		grid-template-columns: repeat(2, 1fr);
 
 	}
+
+	.header__btn {
+		line-height: 120%;
+		height: 43px;
+	}
 	.header__top-right {
 		gap: 8px;
 	}
@@ -92,7 +97,7 @@
 	}
 
 	.header__bottom {
-		padding: 10px 8px;
+		padding: 5px 8px;
 		max-height: 63px;
 		gap: 8px;
 	}
@@ -105,7 +110,9 @@
 	.services__container {
 		grid-template-columns: 1fr;
 	}
-
+	.service-card__image {
+		max-height: 164px;
+	}
 	.phone-number {
 		display: none;
 	}
@@ -132,7 +139,7 @@
 
 
 	.placing__card-bottom {
-		padding: 16px 24px;
+		padding: 16px 24px 15px;
 	}
 
 	.placing__card-info-top {
@@ -142,10 +149,16 @@
 	}
 
 	.placing__card-full-price {
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 300;
 		line-height: 120%;
 		order: 0;
+		min-height: 17px;
+	}
+
+	.placing__card-link {
+		line-height: 120%;
+		height: 47px;
 	}
 
 	.placing__card-info-bottom {
@@ -223,7 +236,7 @@
 	}
 
 	.contacts__info-container {
-		gap: 4px;
+		gap: 6px;
 	}
 
 	.footer {
@@ -288,7 +301,7 @@
 	}
 
 	.special-offers__additional-container .special-offer-card:not(:last-child) {
-		margin-bottom: 6px;
+		margin-bottom: 8px;
 	}
 
 	.special-offer-card {
@@ -335,14 +348,19 @@
 
 	.about-us__text {
 		font-size: 14px;
+		line-height: 158%;
+		padding-bottom: 1px;
 	}
 
 	.service-card__text {
 		font-size: 14px;
 	}
-
+	.service-card__link {
+		margin-bottom: 10px;
+	}
 	.service-card__bottom {
 		padding: 24px 16px;
+		min-height: 145px;
 	}
 
 	.services__container {
@@ -359,7 +377,9 @@
 		grid-template-columns: minmax(32px, auto) 1fr;
 		gap: 16px;
 	}
-
+	.benefits__item-text {
+		line-height: 156%;
+	}
 	.benefits__item-top {
 		height: 32px;
 		width: 32px;
@@ -374,10 +394,19 @@
 		width: 100%;
 	}
 
+	.tour__input-number-container {
+		gap: 8px;
+	}
+
 	.placing__card-top-image {
 		height: 132px;
 	}
-
+	.placing__card-price {
+		font-size: 14px;
+	}
+	.tour__input-number-container {
+		flex-direction: column;
+	}
 	.tour__container {
 		flex-direction: column;
 	}
@@ -409,6 +438,58 @@
 		// --content-width: 640px;
 	}
 
+
+
+	.icon {
+		font-size: 44px;
+	}
+
+	.header__top-right {
+		gap: 8px;
+	}
+
+	.header__top-btns-container {
+		gap: 16px;
+		align-items: center;
+	}
+
+	.phone-number {
+		font-size: 16px;
+	}
+	.logo {
+		padding: 4px 8px;
+
+		gap: 8px;
+
+		// max-width: 173px;
+		width: 157px;
+		height: 43px;
+
+
+		&__image-container {
+			width: 46px;
+			height: 35px;
+		}
+
+		&__text {
+			font-size: 18px;
+
+
+			&-container {
+				padding: 0;
+				gap: 0;
+				// padding-right: 8px;
+			}
+		}
+
+		&__sub-text {
+			bottom: 0;
+			font-size: 12px;
+			// transform: translateX(0);
+			position: relative;
+		}
+	}
+
 	.burger-menu-btn {
 		display: block;
 	}
@@ -417,9 +498,14 @@
 		display: none;
 	}
 
+	.header__top {
+		margin-bottom: 24px;
+	}
+
 	.header__bottom {
 		// justify-content: flex-start;
 		padding: 8px 16px;
+		min-height: 68px;
 	}
 
 	.header {
@@ -429,6 +515,17 @@
 
 	h2 {
 		margin-bottom: 16px;
+		font-size: 32px;
+	}
+
+
+	.special-offer-card {
+		padding: 40px 48px 46px 48px;
+	}
+	.special-offers__main {
+		gap: 115px;
+		padding: 120px 24px 46px 56px;
+
 	}
 
 	.special-offers {
@@ -453,20 +550,35 @@
 
 	}
 
+
 	.benefits__container {
 		grid-template-columns: repeat(2, 1fr);
 
 	}
 
+	.benefits__item {
+		padding: 48px 28px 25px;
+		min-height: 227px;
+		gap: 0;
+	}
+
 	.placing__container {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.placing__card-bottom {
+		padding: 24px 32px;
+	}
+	.placing__card-info-bottom {
+		margin-bottom: 21px;
 	}
 
 	.placing__card-info-top {
 		flex-direction: column;
 
 	}
-
+	.placing__card-link {
+		height: 45px;
+	}
 	.placing__card-full-price {
 		order: 0;
 	}
@@ -482,28 +594,81 @@
 	.section:not(:last-child) {
 		margin-bottom: 40px;
 	}
-
 	.contacts__container {
 		grid-template-columns: 1fr;
-		gap: 32px;
+		gap: 50px;
 		padding: 40px;
 	}
-
+	.contacts__image-container {
+		height: calc(100% + 18px);
+	}
 	.contacts__bottom-container {
 		order: 0;
+		max-width: none;
+		gap: 32px;
 	}
-
+	.contacts__info-heading {
+		// width: 182px;
+	}
+	.contacts__info-item {
+		grid-template-columns: 175px auto;
+		gap: 16px;
+		padding-bottom: 24px;
+	}
+	.contacts__info-container {
+		gap: 12px;
+	}
+	.contacts__links-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+	}
 	.contacts__btn {
 		place-self: center;
+		max-width: 240px;
+		height: 70px;
 	}
 
 	.main {
 		margin-bottom: 48px;
 	}
+	.section-tour {
+		padding: 24px 32px;
+	}
+	.tour {
+		&__container {
+			padding: 26px 24px 31px;
+			flex-direction: column;
+			gap: 34px;
+		}
+
+		&__label {
+			width: 100%;
+		}
+
+		&__btn {
+			padding: 14px 82px;
+			font-size: 14px;
+			line-height: 100%;
+		}
+		&__input {
+			// min-width: 60px;
+			width: 100%;
+		}
+	}
+	.tour__input-number-container {
+		gap: 30px;
+	}
+	.tour__input-container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		gap: 22px 48px;
+	}
 
 	.footer {
 		// grid-template-columns: 1fr auto;
-		padding: 40px;
+		padding: 42px;
 		gap: 16px;
 	}
 
@@ -520,10 +685,11 @@
 	.footer__rights {
 		margin-bottom: 16px;
 	}
-
-	.contacts__image-container {
-		max-height: 513px;
+	.footer__text-desc {
+		margin-bottom: 16px;
 	}
+
+
 }
 
 

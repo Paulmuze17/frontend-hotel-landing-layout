@@ -1,5 +1,5 @@
 .section-tour {
-	padding: 40px 48px;
+	padding: 40px 48px 28px;
 	background-color: var(--color-grey-medium);
 	border-radius: var(--border-radius);
 }
@@ -27,6 +27,12 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 8px;
+	}
+
+	&__input-number-container {
+		display: flex;
+		justify-content: space-between;
+		gap: 74px;
 	}
 
 	&__input {
