@@ -30,9 +30,11 @@
 	}
 
 	&__input-number-container {
+		width: 21.77734375%;
 		display: flex;
 		justify-content: space-between;
-		gap: 74px;
+		gap: 8px;
+		align-self: center;
 	}
 
 	&__input {

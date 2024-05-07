@@ -22,6 +22,7 @@
 	:root {
 		--container-offset: 16px;
 	}
+
 	.icon {
 		font-size: 40px;
 	}
@@ -118,8 +119,8 @@
 	}
 
 	.phone-number-icon,
-	.burger-menu-btn {
-		display: block;
+	.hamburger-menu__btn-open {
+		display: flex;
 	}
 
 	.service-card__top {
@@ -396,6 +397,9 @@
 
 	.tour__input-number-container {
 		gap: 8px;
+		width: 100%;
+		flex-direction: column;
+
 	}
 
 	.placing__card-top-image {
@@ -404,9 +408,7 @@
 	.placing__card-price {
 		font-size: 14px;
 	}
-	.tour__input-number-container {
-		flex-direction: column;
-	}
+
 	.tour__container {
 		flex-direction: column;
 	}
@@ -429,15 +431,24 @@
 	.footer__rules-link {
 		font-size: 14px;
 	}
+
+	.hamburger-menu__btn-close {
+		right: 16px;
+		top: 16px;
+	}
+	.hamburger-menu__btn-wrapper {
+		height: 40px;
+		width: 40px;
+	}
+
 }
 
 // 768px-992px
-@media (min-width: 527px) and (max-width: 992px) {
+@media (min-width: 527px) and (max-width: 991.96px) {
 	:root {
 		--container-offset: 32px;
 		// --content-width: 640px;
 	}
-
 
 
 	.icon {
@@ -490,8 +501,8 @@
 		}
 	}
 
-	.burger-menu-btn {
-		display: block;
+	.hamburger-menu__btn-open {
+		display: flex;
 	}
 
 	.menu__container {
@@ -644,6 +655,7 @@
 
 		&__label {
 			width: 100%;
+			align-self: center;
 		}
 
 		&__btn {
@@ -658,11 +670,12 @@
 	}
 	.tour__input-number-container {
 		gap: 30px;
+		width: 100%;
 	}
 	.tour__input-container{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		align-items: center;
+		// align-items: center;
 		gap: 22px 48px;
 	}
 
@@ -693,9 +706,8 @@
 }
 
 
-@media (min-width: 527px) and (max-width: 992px) {
-	:root {
-		--container-offset: 32px;
-		// --content-width: 640px;
+@media (min-width: 992px) and (max-width: 4000px) {
+	.hamburger-menu__items-wrapper {
+		display: none !important;
 	}
 }
