@@ -118,8 +118,7 @@
 		display: none;
 	}
 
-	.phone-number-icon,
-	.hamburger-menu__btn-open {
+	.phone-number-icon {
 		display: flex;
 	}
 
@@ -439,6 +438,7 @@
 	.hamburger-menu__btn-wrapper {
 		height: 40px;
 		width: 40px;
+		display: flex;
 	}
 
 }
@@ -501,7 +501,7 @@
 		}
 	}
 
-	.hamburger-menu__btn-open {
+	.hamburger-menu__btn-wrapper {
 		display: flex;
 	}
 

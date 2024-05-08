@@ -179,16 +179,13 @@
 			display: flex;
 		}
 
-		&-open {
-			display: none;
-		}
-
         &-wrapper {
 			// position: relative;
-            // display: none;
+            display: none;
 			height: 44px;
 			width: 44px;
 			// z-index: 11;
+			// display: flex;
 			align-items: center;
 			justify-content: center;
         }
